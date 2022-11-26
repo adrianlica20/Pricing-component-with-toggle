@@ -1,6 +1,6 @@
 const button = document.getElementById("toggle-button");
-const flexy = document.getElementById("flexy");
+const switchClass = document.getElementById("switch-class");
 
 button.addEventListener("change", (e) => {
-  flexy.classList.toggle("show-monthly");
+  switchClass.classList.toggle("show-monthly");
 });

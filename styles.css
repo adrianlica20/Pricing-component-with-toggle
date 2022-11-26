@@ -8,6 +8,7 @@
 body {
   background-color: hsl(240, 78%, 98%);
   color: hsl(233, 13%, 49%);
+  font-size: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -69,7 +70,7 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 1200px;
+  width: 1440px;
 }
 
 .pricing-container {
@@ -84,7 +85,7 @@ h1 {
   background: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
   color: #fff;
   height: 25.5em;
-  padding-top: 30px;
+  padding-top: 20px;
 }
 
 h4 {
@@ -132,14 +133,28 @@ button {
   margin: 0;
 }
 
-.pricing-container .monthly {
+.pricing-container .annually {
   display: none;
-}
-
-.show-monthly .pricing-container .monthly {
-  display: block;
 }
 
 .show-monthly .pricing-container .annually {
+  display: block;
+}
+
+.show-monthly .pricing-container .monthly {
   display: none;
+}
+
+@media (max-width: 850px) {
+  body {
+    height: max-content;
+  }
+
+  .pricing-plans {
+    flex-direction: column;
+  }
+
+  .pricing-container {
+    margin-top: 20px;
+  }
 }
